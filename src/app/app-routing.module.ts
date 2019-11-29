@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'table',
+    path: '',
     loadChildren: './tabla-editable/tabla-editable.module#TablaEditableModule'
   }
 ];
