@@ -1,0 +1,16 @@
+<h5 class="text-center">
+  <i class="fas fa-exclamation-triangle"></i>
+  ¿Desea cambiar el nombre de la la columna ? <br>
+  <strong>Columna: {{ name }}</strong>
+</h5>
+<mat-dialog-content class="mat-typography">
+  <form [formGroup]="form">
+    <mat-form-field style="width:100%">
+      <input matInput  formControlName="changeText" placeholder="introduzca el nuevo nombre">
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="center">
+ <button mat-button mat-raised-button  color="accent" class="color-text" mat-dialog-close (click)="sendNewName()">Cambiar nombre</button>
+  <!--  <button mat-button mat-raised-button  color="primary" [mat-dialog-close]="true" (click)="deleteRow(id)">Confirmar</button> -->
+</mat-dialog-actions>
